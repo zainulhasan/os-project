@@ -94,9 +94,9 @@ int createClient(choice)
     /* Attach the shared memory segment. */
     shmaddr = (char *)shmat(shm_id, 0, 0);
 
-    printf("shared memory attached at address %p\n", shmaddr);
 
-    char cid = '1';
+
+  
 
     /* Start to write data. */
     ptr = shmaddr + sizeof(next);
